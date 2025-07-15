@@ -10,7 +10,7 @@ a = 15
 b = 4
 
 print(f"a = {a}, b = {b}")
-print()
+print("a=",a, "b= ",b)
 
 # Addition (+)
 result_add = a + b
