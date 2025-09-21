@@ -17,7 +17,7 @@ while True:
         print("Age: ",person[1])
         print("City: ",person[2])
         print("Country: ",person[3])
-        print("Hobbies: ",person[4])
+        print("Hobbies: ",hobbies)
 
     #add hobby
     elif choice == "2":
@@ -37,9 +37,8 @@ while True:
     #new age 
     elif choice == "4":
         new_age = int(input("Enter new age:"))
-        person = (person[0], new_age, person[2], person[3], person[4])
+        person = (person[0], new_age, person[2], person[3])
         print("age updated complete!")
-        break
 
 else:
     print("Invalid choice, please try again.")

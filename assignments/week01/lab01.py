@@ -1,5 +1,4 @@
 # Exercise 1: Personal Profile Creator
-print("=== Personal Profile Creator ===")
 # Create a program that asks for:
 # - Full name
 # - Age
@@ -10,6 +9,9 @@ print("=== Personal Profile Creator ===")
 
 # Write your solution here:
 
+
+
+print("=== Personal Profile Creator ===")
 Full_name = input("What is your name?:")
 Age = input("How old are you?")
 email = input("What is your email address?:")
