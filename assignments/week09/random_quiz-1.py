@@ -25,3 +25,29 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+
+import random 
+
+ramdom_number = ramdom.randint(1,20)
+print("=== SIMPLE GUESSING GAME ===")
+print("Guess my number between 1 and 20!")
+print("You Have 6 attempts.")
+
+for i in range(6):
+    try:
+        guess_number = int(input("Attemp {i}/6 - Enter your guess number: "))
+    
+        if guess_number <= 0:
+            print(f"Number must more than 0.")
+    except ValueError:
+        print("print enter a valid number.")
+        continue
+
+    if ramdom_number == guess_number:
+        print(f"Congratulations! You won in {i+1} Attemps")
+        break
+    elif ramdom_number < guess_number:
+        print("Too high! try again.")
+    else:
+        print("Too low! Try again.")
+
